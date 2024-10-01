@@ -1,7 +1,12 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --watch server.ts",
-    "start": "deno run --allow-net server.ts"
+    "dev": "deno run --allow-net --watch main.ts",
+    "start": "deno run --allow-net main.ts"
+  },
+  "deploy": {
+    "exclude": [],
+    "include": [],
+    "entrypoint": "main.ts"
   },
   "fmt": {
     "useTabs": false,
