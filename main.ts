@@ -3,25 +3,24 @@ import { Router } from 'jsr:@oak/oak/router';
 import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
 import { getLibrary, LibraryData } from './data/library/index.ts';
 
-const booksPath = './data/library/books';
+const BOOKS_PATH = './data/library/books';
+const port = 8080;
 
-export async function buildLibraryCache() {
-  try {
-    console.log('yo');
+try {
+  const library = await getLibrary(BOOKS_PATH);
 
-    const library = await getLibrary(booksPath);
+  await Deno.writeTextFile('library.json', JSON.stringify(library));
+  await Deno.writeTextFile(
+    'library.version.txt',
+    `${Date.now()}`,
+  );
 
-    await Deno.writeTextFile('library.json', JSON.stringify(library));
-    await Deno.writeTextFile(
-      'library.version.txt',
-      `${Date.now()}`,
-    );
-  } catch (e) {
-    console.error(e);
-  }
+  const libraryFileVersion = await Deno.readTextFile('library.version.txt');
+
+  console.log(libraryFileVersion);
+} catch (err) {
+  console.error('Error creating cache:', err);
 }
-
-await buildLibraryCache();
 
 const router = new Router();
 router
@@ -60,4 +59,8 @@ const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-await app.listen({ port: 8080 });
+app.addEventListener('listen', async () => {
+  console.log(`Listening on localhost:${port}`);
+});
+
+await app.listen({ port });
