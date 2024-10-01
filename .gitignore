@@ -34,3 +34,6 @@ junit.xml
 # Jupyter files
 .ipynb_checkpoints/
 Untitled*.ipynb
+
+dist/
+library.json

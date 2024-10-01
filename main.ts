@@ -10,7 +10,7 @@ router
   })
   .options('/library', oakCors())
   .get('/library', oakCors(), async (context) => {
-    const res = await getLibrary('./data/library/books');
+    const res = await getLibrary();
 
     context.response.body = res;
   });
