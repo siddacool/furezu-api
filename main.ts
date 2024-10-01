@@ -39,6 +39,12 @@ router
     context.response.body = `${libraryFileVersion} - ${new Date(
       Number(libraryFileVersion),
     )}`;
+  }).options('/library-send', oakCors())
+  .get('/library-send', oakCors(), async (context) => {
+    await context.send({
+      root: `${Deno.cwd()}/library.json`,
+      path: '',
+    });
   });
 
 const app = new Application();
