@@ -1,7 +1,6 @@
 import { Application } from 'jsr:@oak/oak/application';
 import { Router } from 'jsr:@oak/oak/router';
 import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
-import { LibraryData } from './data/library/index.ts';
 
 const port = 8080;
 
@@ -28,23 +27,18 @@ router
   })
   .options('/library', oakCors())
   .get('/library', oakCors(), async (context) => {
-    const libraryFile = await Deno.readTextFile('library.json');
-    const data = JSON.parse(libraryFile) as LibraryData[];
-
-    context.response.body = data;
-  }).options('/library-cache-version', oakCors())
+    await context.send({
+      root: `${Deno.cwd()}/library.json`,
+      path: '',
+    });
+  })
+  .options('/library-cache-version', oakCors())
   .get('/library-cache-version', oakCors(), async (context) => {
     const libraryFileVersion = await Deno.readTextFile('library.version.txt');
 
     context.response.body = `${libraryFileVersion} - ${new Date(
       Number(libraryFileVersion),
     )}`;
-  }).options('/library-send', oakCors())
-  .get('/library-send', oakCors(), async (context) => {
-    await context.send({
-      root: `${Deno.cwd()}/library.json`,
-      path: '',
-    });
   });
 
 const app = new Application();
