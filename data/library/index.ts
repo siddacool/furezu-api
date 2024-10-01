@@ -29,11 +29,9 @@ export type LibraryData = {
   exportedAt: Date;
 };
 
-export async function getLibrary() {
+export async function getLibrary(path: string) {
   try {
     const library = [];
-
-    const path = `${Deno.cwd()}\\data\\library\\books`;
 
     for await (const dirEntry of Deno.readDir(path)) {
       if (!dirEntry.isFile) {
