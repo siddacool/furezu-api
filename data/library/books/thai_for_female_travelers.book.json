@@ -1,0 +1,135 @@
+{
+  "_id": "l_7B9zJk5jgw7VcjZxvon",
+  "book": {
+    "_id": "l_7B9zJk5jgw7VcjZxvon",
+    "name": "Thai 🇹🇭 (for female travelers)",
+    "createdAt": "2024-09-28T12:30:25.933Z",
+    "updatedAt": "2024-09-28T12:39:06.272Z",
+    "importedAt": "2024-09-28T12:47:18.863Z",
+    "id": 10
+  },
+  "phrases": [
+    {
+      "_id": "ufvfN1RZFA5yKa2iHKPnW",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "Hello / Goodbye",
+      "phrase": "Sawatdee kha",
+      "translation": "สวัสดีค่ะ",
+      "createdAt": "2024-09-28T12:32:07.596Z",
+      "updatedAt": "2024-09-28T12:32:07.596Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 59
+    },
+    {
+      "_id": "lye0s6K7Mz_8TwcD0GA0t",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "Thank you",
+      "phrase": "khop khun kha",
+      "translation": "ขอบคุณค่ะ",
+      "createdAt": "2024-09-28T12:32:38.579Z",
+      "updatedAt": "2024-09-28T12:32:38.579Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 60
+    },
+    {
+      "_id": "D4vCbplB6h7Pk1Vinnpoz",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "You’re welcome",
+      "phrase": "mai pen rai kha",
+      "translation": "ไม่เป็นไรค่ะ",
+      "createdAt": "2024-09-28T12:33:17.280Z",
+      "updatedAt": "2024-09-28T12:33:17.280Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 61
+    },
+    {
+      "_id": "Wz3cWbgJ24Et1hGbDyD7q",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "Yes",
+      "phrase": "chai kha",
+      "translation": "ใช่ค่ะ",
+      "createdAt": "2024-09-28T12:33:48.445Z",
+      "updatedAt": "2024-09-28T12:44:38.307Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 62
+    },
+    {
+      "_id": "1rJ7H1k4tk2VxNMoD1AEj",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "No",
+      "phrase": "mai kha",
+      "translation": "ไม่ค่ะ",
+      "createdAt": "2024-09-28T12:34:19.456Z",
+      "updatedAt": "2024-09-28T12:45:29.613Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 63
+    },
+    {
+      "_id": "0pwab2MAMCyKL-B5Lf5X6",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "Toilet",
+      "phrase": "hawng naam",
+      "translation": "ห้องน้ำ",
+      "createdAt": "2024-09-28T12:34:36.450Z",
+      "updatedAt": "2024-09-28T12:34:36.450Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 64
+    },
+    {
+      "_id": "2d3jNIgdypy4ykyKDhe9T",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "Where is the __ ?",
+      "phrase": "__ yuu thi naai kha",
+      "translation": "",
+      "createdAt": "2024-09-28T12:34:48.229Z",
+      "updatedAt": "2024-09-28T12:34:48.229Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 65
+    },
+    {
+      "_id": "GLzXmDKh5ihjpId_fHGnV",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "The food is delicious",
+      "phrase": "aroy kha",
+      "translation": "อร่อยค่ะ",
+      "createdAt": "2024-09-28T12:35:45.359Z",
+      "updatedAt": "2024-09-28T12:46:06.874Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 66
+    },
+    {
+      "_id": "0TFT6Qc-XLVcr_Q2BJCwl",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "I’m from (country name)",
+      "phrase": "phom maa jaak (country name)",
+      "translation": "",
+      "createdAt": "2024-09-28T12:35:56.047Z",
+      "updatedAt": "2024-09-28T12:35:56.047Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 67
+    },
+    {
+      "_id": "uYc3yq7IHLpmLTa07lV42",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "The bill please",
+      "phrase": "check bin kha",
+      "translation": "",
+      "createdAt": "2024-09-28T12:36:12.834Z",
+      "updatedAt": "2024-09-28T12:36:12.834Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 68
+    },
+    {
+      "_id": "W7xdr1NUo-pmCR_s0YCZZ",
+      "bookId": "l_7B9zJk5jgw7VcjZxvon",
+      "meaning": "Sorry / excuse me",
+      "phrase": "Khor thod kha",
+      "translation": "ขอโทษค่ะ",
+      "createdAt": "2024-09-28T12:37:19.639Z",
+      "updatedAt": "2024-09-28T12:37:19.639Z",
+      "importedAt": "2024-09-28T12:47:18.863Z",
+      "id": 69
+    }
+  ],
+  "exportedAt": "2024-09-28T12:48:31.626Z"
+}

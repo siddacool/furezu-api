@@ -1,0 +1,135 @@
+{
+  "_id": "1pj8wNJbtbTkrPoequLWH",
+  "book": {
+    "_id": "1pj8wNJbtbTkrPoequLWH",
+    "name": "Thai 🇹🇭 (for male travelers)",
+    "createdAt": "2024-09-27T13:25:23.379Z",
+    "updatedAt": "2024-09-27T15:00:15.749Z",
+    "importedAt": "2024-09-27T15:00:33.766Z",
+    "id": 9
+  },
+  "phrases": [
+    {
+      "_id": "frWVXpFqSZIww87wFZuov",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "Hello / Goodbye ",
+      "phrase": "sawatdee khrap",
+      "translation": "สวัสดีครับ",
+      "createdAt": "2024-09-27T13:25:59.283Z",
+      "updatedAt": "2024-09-27T14:56:48.245Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 48
+    },
+    {
+      "_id": "u3_DRY2GQ9YodaP5v-LVR",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "Thank you",
+      "phrase": "khop khun khrap",
+      "translation": "ขอบคุณครับ",
+      "createdAt": "2024-09-27T13:26:20.130Z",
+      "updatedAt": "2024-09-27T14:52:07.992Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 49
+    },
+    {
+      "_id": "rRzhlIpSG4220ySeY77Tk",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "You’re welcome",
+      "phrase": "mai pen rai khrap",
+      "translation": "ไม่เป็นไรครับ",
+      "createdAt": "2024-09-27T13:26:57.172Z",
+      "updatedAt": "2024-09-27T14:53:07.953Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 50
+    },
+    {
+      "_id": "ASv7RF_tdr3H0uEKwYN5t",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "Yes",
+      "phrase": "chai khrap",
+      "translation": "ใช่ครับ",
+      "createdAt": "2024-09-27T13:27:17.398Z",
+      "updatedAt": "2024-09-27T14:54:01.691Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 51
+    },
+    {
+      "_id": "rRIu4RxOZ1kt3t4bCQzPX",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "No",
+      "phrase": "mai khrap",
+      "translation": "ไม่ครับ",
+      "createdAt": "2024-09-27T13:27:33.967Z",
+      "updatedAt": "2024-09-27T14:59:09.483Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 52
+    },
+    {
+      "_id": "443Yv0y-2AxAWqlUS7Aq7",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "Toilet",
+      "phrase": "hawng naam",
+      "translation": "ห้องน้ำ",
+      "createdAt": "2024-09-27T13:29:19.288Z",
+      "updatedAt": "2024-09-27T13:29:19.288Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 53
+    },
+    {
+      "_id": "4tWNZdyPEXa81jNy-VDwy",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "Where is the __ ?",
+      "phrase": "__ yuu thi naai khrab",
+      "translation": "",
+      "createdAt": "2024-09-27T13:29:50.975Z",
+      "updatedAt": "2024-09-27T13:29:50.975Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 54
+    },
+    {
+      "_id": "qw8NMMnibry9NgzsIDpTg",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "The food is delicious",
+      "phrase": "aroy khrap",
+      "translation": "อร่อยครับ",
+      "createdAt": "2024-09-27T13:30:16.472Z",
+      "updatedAt": "2024-09-27T14:56:27.124Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 55
+    },
+    {
+      "_id": "Jx2DemfmZwil_IeOQh7WE",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "I’m from (country name)",
+      "phrase": "phom maa jaak (country name)",
+      "translation": "",
+      "createdAt": "2024-09-27T13:31:04.240Z",
+      "updatedAt": "2024-09-27T13:31:04.240Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 56
+    },
+    {
+      "_id": "fPdXrO5nnsagjQ3U0EKje",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "The bill please",
+      "phrase": "check bin khrap",
+      "translation": "",
+      "createdAt": "2024-09-27T13:31:29.268Z",
+      "updatedAt": "2024-09-27T13:31:29.268Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 57
+    },
+    {
+      "_id": "VA_UF87bf8JYUyQk6LFY0",
+      "bookId": "1pj8wNJbtbTkrPoequLWH",
+      "meaning": "Sorry / excuse me",
+      "phrase": "Khor thod khrap",
+      "translation": "ขอโทษครับ",
+      "createdAt": "2024-09-27T14:58:23.356Z",
+      "updatedAt": "2024-09-27T14:58:23.356Z",
+      "importedAt": "2024-09-27T15:00:33.766Z",
+      "id": 58
+    }
+  ],
+  "exportedAt": "2024-09-27T15:02:53.004Z"
+}

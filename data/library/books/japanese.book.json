@@ -1,0 +1,81 @@
+{
+  "_id": "xi6U3muAt7XKdgu2toSLg",
+  "book": {
+    "_id": "xi6U3muAt7XKdgu2toSLg",
+    "name": "Japanese 🇯🇵",
+    "createdAt": "2024-09-26T09:24:57.943Z",
+    "updatedAt": "2024-09-26T09:24:57.943Z",
+    "importedAt": "2024-09-27T05:27:20.781Z",
+    "voice": "Google 日本語",
+    "id": 9
+  },
+  "phrases": [
+    {
+      "_id": "NeUD2Iik-qAg_coeHMgc6",
+      "bookId": "xi6U3muAt7XKdgu2toSLg",
+      "meaning": "Hello",
+      "phrase": "koni chiwa",
+      "translation": "こんにちは",
+      "createdAt": "2024-09-26T10:23:45.747Z",
+      "updatedAt": "2024-09-26T10:24:52.627Z",
+      "importedAt": "2024-09-27T05:27:20.781Z",
+      "id": 28
+    },
+    {
+      "_id": "hJYtkPkTo6MP9MCFCTHJQ",
+      "bookId": "xi6U3muAt7XKdgu2toSLg",
+      "meaning": "Thank you ",
+      "phrase": "arigato gozai-mas",
+      "translation": "ありがとうございます",
+      "createdAt": "2024-09-26T10:24:41.201Z",
+      "updatedAt": "2024-09-26T10:25:23.745Z",
+      "importedAt": "2024-09-27T05:27:20.781Z",
+      "id": 29
+    },
+    {
+      "_id": "Dt19OXFTmvy89zvZRGoWT",
+      "bookId": "xi6U3muAt7XKdgu2toSLg",
+      "meaning": "Please",
+      "phrase": "kuda-sai",
+      "translation": "ください",
+      "createdAt": "2024-09-26T10:25:49.095Z",
+      "updatedAt": "2024-09-26T10:25:49.095Z",
+      "importedAt": "2024-09-27T05:27:20.781Z",
+      "id": 30
+    },
+    {
+      "_id": "smZs5IjKFKmoHqH9IPsbD",
+      "bookId": "xi6U3muAt7XKdgu2toSLg",
+      "meaning": "Excuse me/ I'm sorry",
+      "phrase": "Sumi-masen",
+      "translation": "すみません",
+      "createdAt": "2024-09-26T10:26:34.501Z",
+      "updatedAt": "2024-09-26T10:27:53.036Z",
+      "importedAt": "2024-09-27T05:27:20.781Z",
+      "id": 31
+    },
+    {
+      "_id": "DMnTsorYDKTQXcridOzFa",
+      "bookId": "xi6U3muAt7XKdgu2toSLg",
+      "meaning": "Yes",
+      "phrase": "hai",
+      "translation": "はい",
+      "createdAt": "2024-09-26T10:27:08.695Z",
+      "updatedAt": "2024-09-26T10:27:08.695Z",
+      "importedAt": "2024-09-27T05:27:20.781Z",
+      "id": 32
+    },
+    {
+      "_id": "bd0m8b-_kcDnjK6xLIgJq",
+      "bookId": "xi6U3muAt7XKdgu2toSLg",
+      "meaning": "No",
+      "phrase": "ee-eh",
+      "translation": "いいえ",
+      "createdAt": "2024-09-26T10:27:24.365Z",
+      "updatedAt": "2024-09-26T10:27:24.365Z",
+      "importedAt": "2024-09-27T05:27:20.781Z",
+      "id": 33
+    }
+  ],
+  "exportedAt": "2024-09-27T12:23:12.186Z"
+}
