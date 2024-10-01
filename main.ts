@@ -1,7 +1,23 @@
 import { Application } from 'jsr:@oak/oak/application';
 import { Router } from 'jsr:@oak/oak/router';
 import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
-import { LibraryData } from './data/library/index.ts';
+import { getLibrary, LibraryData } from './data/library/index.ts';
+
+const booksPath = './data/library/books';
+
+export async function buildLibraryCache() {
+  try {
+    const library = await getLibrary(booksPath);
+
+    await Deno.writeTextFile('library.json', JSON.stringify(library));
+    await Deno.writeTextFile(
+      'library.version.txt',
+      `${Date.now()}`,
+    );
+  } catch (e) {
+    console.error(e);
+  }
+}
 
 const router = new Router();
 router
@@ -39,5 +55,7 @@ router
 const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
+
+await buildLibraryCache();
 
 await app.listen({ port: 8080 });
