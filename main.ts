@@ -5,10 +5,10 @@ import { getLibrary, LibraryData } from './data/library/index.ts';
 
 const booksPath = './data/library/books';
 
-await buildLibraryCache();
-
 export async function buildLibraryCache() {
   try {
+    console.log('yo');
+
     const library = await getLibrary(booksPath);
 
     await Deno.writeTextFile('library.json', JSON.stringify(library));
@@ -20,6 +20,8 @@ export async function buildLibraryCache() {
     console.error(e);
   }
 }
+
+await buildLibraryCache();
 
 const router = new Router();
 router
