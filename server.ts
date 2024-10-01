@@ -12,13 +12,13 @@ books.set('1', {
 
 const router = new Router();
 router
-  .get('/', (context) => {
+  .get('/', oakCors(), (context) => {
     context.response.body = 'Hello world!';
   })
   .get('/book', oakCors(), (context) => {
     context.response.body = Array.from(books.values());
   })
-  .get('/book/:id', (context) => {
+  .get('/book/:id', oakCors(), (context) => {
     if (books.has(context?.params?.id)) {
       context.response.body = books.get(context.params.id);
     }
