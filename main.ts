@@ -35,7 +35,9 @@ router
   .get('/library-cache-version', oakCors(), async (context) => {
     const libraryFileVersion = await Deno.readTextFile('library.version.txt');
 
-    context.response.body = libraryFileVersion;
+    context.response.body = `${libraryFileVersion} - ${new Date(
+      Number(libraryFileVersion),
+    )}`;
   });
 
 const app = new Application();
