@@ -29,6 +29,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "siddheshman-furezu-api-62"
+          project: "furezu-api"
           entrypoint: "main.ts"
           root: ""
