@@ -15,6 +15,7 @@ router
   .get('/', oakCors(), (context) => {
     context.response.body = 'Hello world!';
   })
+  .options('/book', oakCors())
   .get('/book', oakCors(), (context) => {
     context.response.body = Array.from(books.values());
   })
