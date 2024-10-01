@@ -20,6 +20,7 @@ router
           <h1>Furezu API</h1>
           <ul>
             <li><a href="library">Library</a></li>
+            <li><a href="library-cache-version">Library cache version</a></li>
           </ul>
         </body>
       </html>
