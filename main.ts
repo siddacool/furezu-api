@@ -1,26 +1,9 @@
 import { Application } from 'jsr:@oak/oak/application';
 import { Router } from 'jsr:@oak/oak/router';
 import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
-import { getLibrary, LibraryData } from './data/library/index.ts';
+import { LibraryData } from './data/library/index.ts';
 
-const BOOKS_PATH = './data/library/books';
 const port = 8080;
-
-try {
-  const library = await getLibrary(BOOKS_PATH);
-
-  await Deno.writeTextFile('library.json', JSON.stringify(library));
-  await Deno.writeTextFile(
-    'library.version.txt',
-    `${Date.now()}`,
-  );
-
-  const libraryFileVersion = await Deno.readTextFile('library.version.txt');
-
-  console.log(libraryFileVersion);
-} catch (err) {
-  console.error('Error creating cache:', err);
-}
 
 const router = new Router();
 router

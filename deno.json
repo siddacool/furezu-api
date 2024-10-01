@@ -1,7 +1,8 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --allow-write --watch main.ts",
-    "start": "deno run --allow-net --allow-read --allow-write main.ts"
+    "build": "deno run --allow-read --allow-write build.ts",
+    "dev": "deno run --allow-net --allow-read --watch main.ts",
+    "start": "deno run --allow-net --allow-read main.ts"
   },
   "deploy": {
     "exclude": [],
