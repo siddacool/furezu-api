@@ -59,7 +59,7 @@ const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.addEventListener('listen', async () => {
+app.addEventListener('listen', () => {
   console.log(`Listening on localhost:${port}`);
 });
 
