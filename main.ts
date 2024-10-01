@@ -5,6 +5,8 @@ import { getLibrary, LibraryData } from './data/library/index.ts';
 
 const booksPath = './data/library/books';
 
+await buildLibraryCache();
+
 export async function buildLibraryCache() {
   try {
     const library = await getLibrary(booksPath);
@@ -55,7 +57,5 @@ router
 const app = new Application();
 app.use(router.routes());
 app.use(router.allowedMethods());
-
-await buildLibraryCache();
 
 await app.listen({ port: 8080 });
