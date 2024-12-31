@@ -22,9 +22,15 @@ router
     for (let index = 0; index < libraryData.length; index++) {
       const book = libraryData[index];
 
-      libaryList += `<li style="margin-bottom:8px; color: #383737">
-      <span style="font-size:1.2rem; color: #000">${book.book.name}</span> <br />
-      phrases: ${book?.phrases?.length}, groups ${book?.groups?.length || 0}
+      libaryList += `<li style="margin-bottom:16px; color: #383737">
+      <span style="font-size:1.2rem; color: #000; margin-bottom:6px; display: block;">${book.book.name}</span>
+      Phrases: ${book?.phrases?.length}, Groups ${
+        book?.groups?.length || 0
+      }, 📅:${
+        new Date(
+          book?.exportedAt,
+        ).toLocaleString('en-In', { timeZone: 'Asia/Kolkata' })
+      }
     </li>`;
     }
 
@@ -44,16 +50,19 @@ router
       ).toLocaleString('en-In', { timeZone: 'Asia/Kolkata' })
     } (India Standard Time)</p>
           <p>Version: ${libraryFileVersionFormatted}</p>
-           <br />
           <h2>API</h2>
           <ul>
             <li><a href="library">Library</a></li>
           </ul>
           <h2>Logs</h2>
           <b>Total: ${libraryData.length}</b>
+          <details>
+          <summary>Books</summary>
           <ul>
             ${libaryList}
           </ul>
+        </details>
+
         </body>
       </html>
     `;
