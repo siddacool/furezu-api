@@ -6,6 +6,7 @@ export interface Phrase {
   pronounciation?: string;
   translation?: string;
   bookId: string;
+  groupId?: string;
   createdAt: Date;
   updatedAt: Date;
   hidden?: boolean;
@@ -22,10 +23,22 @@ export interface Book {
   importedAt?: Date;
 }
 
+export interface Group {
+  id?: number;
+  _id: string;
+  bookId: string;
+  name: string;
+  createdAt: Date;
+  updatedAt: Date;
+  importedAt?: Date;
+  open?: boolean;
+}
+
 export type LibraryData = {
   _id: string;
   book: Book;
   phrases: Phrase[];
+  groups: Group[];
   exportedAt: Date;
 };
 
@@ -38,7 +51,7 @@ export async function getLibrary(path: string) {
         continue;
       }
 
-      if (!dirEntry.name.endsWith('.book.json')) {
+      if (!dirEntry.name.endsWith('.book.json.txt')) {
         continue;
       }
 
