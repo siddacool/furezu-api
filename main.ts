@@ -1,12 +1,33 @@
 import { Application } from 'jsr:@oak/oak/application';
 import { Router } from 'jsr:@oak/oak/router';
 import { oakCors } from 'https://deno.land/x/cors@v1.2.2/mod.ts';
+import { LibraryData } from './data/library/index.ts';
 
 const port = 8080;
 
 const router = new Router();
 router
-  .get('/', oakCors(), (context) => {
+  .get('/', oakCors(), async (context) => {
+    const libraryFileVersion = await Deno.readTextFile('library.version.txt');
+
+    const libraryFileVersionFormatted = `${libraryFileVersion} - ${new Date(
+      Number(libraryFileVersion),
+    )}`;
+
+    const libraryDataFile = await Deno.readTextFile('library.json');
+    const libraryData = JSON.parse(libraryDataFile) as LibraryData[];
+
+    let libaryList = ``;
+
+    for (let index = 0; index < libraryData.length; index++) {
+      const book = libraryData[index];
+
+      libaryList += `<li style="margin-bottom:8px; color: #383737">
+      <span style="font-size:1.2rem; color: #000">${book.book.name}</span> <br />
+      phrases: ${book?.phrases?.length}, groups ${book?.groups?.length || 0}
+    </li>`;
+    }
+
     context.response.body = `
       <!DOCTYPE html>
       <html lang="en">
@@ -17,9 +38,21 @@ router
         </head>
         <body>
           <h1>Furezu API</h1>
+          <p>Updated at: ${
+      new Date(
+        Number(libraryFileVersion),
+      ).toLocaleString('en-In', { timeZone: 'Asia/Kolkata' })
+    } (India Standard Time)</p>
+          <p>Version: ${libraryFileVersionFormatted}</p>
+           <br />
+          <h2>API</h2>
           <ul>
             <li><a href="library">Library</a></li>
-            <li><a href="library-cache-version">Library cache version</a></li>
+          </ul>
+          <h2>Logs</h2>
+          <b>Total: ${libraryData.length}</b>
+          <ul>
+            ${libaryList}
           </ul>
         </body>
       </html>
@@ -31,14 +64,6 @@ router
       root: `${Deno.cwd()}/library.json`,
       path: '',
     });
-  })
-  .options('/library-cache-version', oakCors())
-  .get('/library-cache-version', oakCors(), async (context) => {
-    const libraryFileVersion = await Deno.readTextFile('library.version.txt');
-
-    context.response.body = `${libraryFileVersion} - ${new Date(
-      Number(libraryFileVersion),
-    )}`;
   });
 
 const app = new Application();
